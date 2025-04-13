@@ -36,7 +36,7 @@ npm install
     To check the currently active context: `kubectl config current-context`  
 &nbsp;
 2. Build the Docker Image  
- -docker build -t myapp .
+ -`docker build -t myapp .`
 &nbsp;
 3. Create Kubernetes Deployment
  -create deployment.yaml file  
