@@ -28,14 +28,14 @@ git clone https://github.com/lswitlearning/sit737-2025-prac6p.git
 npm install
 ```
 
-### Health Check & Restart
+### Instructions
 
 1. Setup the Kubernetes Cluster (Docker Desktop (local K8s))
     Enter Docker Desktop setting, enable Kubernetes  
 
     To check the currently active context: `kubectl config current-context`  
 &nbsp;
-2. Build the Docker Image
+2. Build the Docker Image  
  -docker build -t myapp .
 &nbsp;
 3. Create Kubernetes Deployment
@@ -43,11 +43,11 @@ npm install
  -Apply the file `kubectl apply -f deployment.yaml`  
  -Check pods: `kubectl get pods`
  &nbsp;
-4. Create Kubernetes Service
- -create service.yaml file
- -Apply the file : `kubectl apply -f service.yaml`
- -Verify service: `kubectl get svc`
+4. Create Kubernetes Service  
+ -create service.yaml file  
+ -Apply the file : `kubectl apply -f service.yaml`  
+ -Verify service: `kubectl get svc`  
  &nbsp;
-5. Test the Application
+5. Test the Application  
  http://localhost:30080
  
